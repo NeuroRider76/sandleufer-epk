@@ -7,8 +7,10 @@ body {
 }
 .hero {
     background: url('sandleufer-hero.jpg') no-repeat center center/contain;
-    height: 100vh;
-    background-color: #000; /* fills any empty bars with black */
+    aspect-ratio: 3/4; /* 1200x1600 image */
+    width: 100vw;
+    max-height: 100vh;
+    background-color: #000;
     position: relative;
     display: flex;
     align-items: center;
