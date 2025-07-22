@@ -1,4 +1,3 @@
-
 body {
     background: #000;
     color: #fff;
@@ -8,52 +7,64 @@ body {
 }
 .hero {
     background: url('sandleufer-hero.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: 50vh;
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .hero .overlay {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.hero h1 {
+.big-title {
     font-size: 4rem;
+    font-weight: bold;
     margin: 0;
+    letter-spacing: 2px;
 }
-.hero p {
+.subtitle {
     font-size: 1.5rem;
     color: #ccc;
-}
-main {
-    padding: 2rem;
-}
-h2 {
+    margin-top: 1rem;
     text-align: center;
-    margin-bottom: 1rem;
-}
-a {
-    color: #1db954;
-    text-decoration: none;
 }
 .carousel-container {
     display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-wrap: wrap;
 }
 .slide {
-    flex: 0 0 80%;
-    background: #111;
-    margin: 0 10px;
-    padding: 1rem;
-    border-radius: 8px;
-    scroll-snap-align: center;
-}
-footer {
+    background: #1a1a1a;
+    border-radius: 16px;
+    padding: 1.5rem 2rem;
+    min-width: 240px;
+    max-width: 300px;
+    margin: 0;
+    box-shadow: 0 4px 24px 0 #0c0c0c60;
     text-align: center;
-    padding: 1rem;
-    background: #111;
-    color: #777;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.slide:hover, .slide.active {
+    transform: scale(1.04);
+    box-shadow: 0 8px 32px 0 #bf42ff88;
+}
+@media (max-width: 600px) {
+    .big-title {
+        font-size: 2.5rem;
+    }
+    .carousel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slide {
+        max-width: 90vw;
+    }
 }
