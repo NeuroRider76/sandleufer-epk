@@ -6,8 +6,9 @@ body {
     padding: 0;
 }
 .hero {
-    background: url('sandleufer-hero.jpg') no-repeat center center/cover;
-    height: 100vh;  /* Change from 50vh to 100vh */
+    background: url('sandleufer-hero.jpg') no-repeat center center/contain;
+    height: 100vh;
+    background-color: #000; /* fills any empty bars with black */
     position: relative;
     display: flex;
     align-items: center;
