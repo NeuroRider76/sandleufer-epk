@@ -73,7 +73,7 @@ body {
   box-shadow:
     0 0 24px 4px rgba(255, 0, 180, 0.35),   /* Soft pink glow (adjust for more/less) */
     0 8px 32px rgba(0,0,0,0.32);            /* Subtle black shadow for depth */
-  overflow: hidden;
+  /*overflow: hidden;*/
   z-index: 4;
   display: flex;
   flex-direction: column;
