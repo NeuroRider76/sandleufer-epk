@@ -6,31 +6,32 @@ body {
     padding: 0;
 }
 .hero {
-    position: relative;
-    width: 100vw;
-    /* No height or min-height here! */
-    overflow: hidden;
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  overflow: visible;  /* allows scrolling for tall images */
+  background: #000;
 }
 
 .hero-img {
-    display: block;
-    width: 100vw;
-    height: auto;         /* let the image set the height */
-    object-fit: contain;  /* ensures full image is always visible */
+  width: 100vw;
+  height: auto;
+  display: block;
+  /* This keeps the full vertical frame and lets you scroll if it's taller than the screen */
 }
 
 .overlay {
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;   /* Align overlay content towards the top */
-    background: rgba(0,0,0,0.35); /* Optional: for readability */
-    color: #fff;
-    z-index: 2;
-    text-align: center;
-    padding-top: 30vh; /* Adjust this value as needed for "down from top" */
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* or flex-start with padding-top if you want it higher */
+  background: rgba(0,0,0,0.35); /* for readability */
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+  pointer-events: none; /* lets you click through overlay if needed */
 }
 
 .big-title {
