@@ -1,15 +1,16 @@
 body {
-    background: #000;
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
 }
+
 .hero {
   position: relative;
   width: 100vw;
-  min-height: 100vh;
-  overflow: visible;  /* allows scrolling for tall images */
+  /* The height will be set by the image's aspect ratio, so let it flow naturally */
+  overflow: visible; /* allows all content inside */
   background: #000;
 }
 
@@ -17,37 +18,34 @@ body {
   width: 100vw;
   height: auto;
   display: block;
-  /* This keeps the full vertical frame and lets you scroll if it's taller than the screen */
+  margin: 0 auto;
+  /* No max-height, min-height, object-fit, or cropping */
 }
 
+/* Overlay for floating content inside hero, always positioned inside */
 .overlay {
   position: absolute;
-  top: 0; left: 0; width: 100vw; height: 100vh;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* or flex-start with padding-top if you want it higher */
-  background: rgba(0,0,0,0.35); /* for readability */
-  color: #fff;
-  z-index: 2;
-  text-align: center;
-  pointer-events: none; /* lets you click through overlay if needed */
+  justify-content: center; /* or use flex-start/flex-end + padding for placement */
+  pointer-events: none; /* overlay doesn't block clicks, optional */
 }
 
 .big-title {
   font-size: 4rem;
   font-weight: bold;
-  margin: 0;
-  letter-spacing: 2px;
-  text-shadow: 0 2px 12px #000; /* Helps on bright images */
+  margin: 0 0 1rem 0;
+  text-shadow: 0 2px 12px #000;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: #eee;
-  margin-top: 1rem;
-  text-align: center;
-  text-shadow: 0 2px 8px #000;
+  margin: 0 0 2rem 0;
+  text-shadow: 0 1px 8px #000;
 }
 .carousel-container {
     display: flex;
