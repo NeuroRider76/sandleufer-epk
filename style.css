@@ -42,16 +42,25 @@ body {
 }
 
 .big-title {
-  font-size: 7rem;
-  font-weight: bold;
-  margin: 0 0 1rem 0;
-  text-shadow: 0 2px 12px #000;
+    font-size: 5vw;
+    font-weight: bold;
+    margin: 0;
+    text-shadow:
+        0 0 8px #fff,
+        0 0 24px #fff,
+        0 0 48px #f43fff,   /* pick a color for the glow (e.g. pink) */
+        0 0 96px #f43fff;
 }
 
 .subtitle {
-  font-size: 2.5rem;
-  margin: 0 0 2rem 0;
-  text-shadow: 0 1px 8px #000;
+    font-size: 2.5vw;
+    font-weight: 400;
+    margin: 0;
+    text-shadow:
+        0 0 6px #fff,
+        0 0 12px #fff,
+        0 0 24px #1fa2ff,   /* e.g. blue for the subtitle */
+        0 0 48px #1fa2ff;
 }
 .carousel-container {
     display: flex;
