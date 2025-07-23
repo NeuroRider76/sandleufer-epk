@@ -87,6 +87,7 @@ body {
   color: #fff;
   max-height: 100%;      /* makes sure it doesn't spill outside */
   scrollbar-width: thin; /* for Firefox */
+  flex: 1 1 auto;    /* NEW: allows the scroll box to fill the available height */
 }
 
 .bio-title {
