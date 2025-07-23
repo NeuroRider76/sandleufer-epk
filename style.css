@@ -64,11 +64,11 @@ body {
 }
 .bio-box {
   position: absolute;
-  top: 60%;         /* Adjust as needed */
+  top: 40%;         /* Adjust as needed */
   left: 5%;
   width: 410px;
   height: 340px;
-  background: rgba(0,0,0,0.18);  /* Nearly transparent, slight shade */
+  background: rgba(0,0,0,0.1);  /* Nearly transparent, slight shade */
   border-radius: 18px;
   box-shadow:
     0 0 24px 4px rgba(255, 0, 180, 0.35),   /* Soft pink glow (adjust for more/less) */
