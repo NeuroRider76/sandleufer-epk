@@ -63,17 +63,19 @@ body {
         0 0 48px #1fa2ff;
 }
 .bio-box {
-    position: relative;
-    width: 410px;
-    height: 340px;
-    background: rgba(0,0,0,0.65);
-    border-radius: 18px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-    overflow: hidden;
-    margin: 30px 0 0 60px;  /* top, right, bottom, left */
-    z-index: 4;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  top: 55%;   /* play with this value: lower % = higher up, e.g., 45% */
+  left: 5%;
+  width: 410px;
+  height: 340px;
+  background: rgba(0,0,0,0.65);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  overflow: hidden;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  /* Remove margin, not needed for abs. position */
 }
 
 .bio-scroll {
