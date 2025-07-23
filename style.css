@@ -21,19 +21,16 @@ body {
 
 .overlay {
     position: absolute;
-    top: 0; left: 0; right: 0; 
-    width: 100%;
-    /* Instead of height: 100%, let the content decide */
+    top: 0; left: 0; right: 0; bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    background: rgba(0,0,0,0.35); /* or remove if you want just floating text */
+    justify-content: flex-start;   /* Align overlay content towards the top */
+    background: rgba(0,0,0,0.35); /* Optional: for readability */
     color: #fff;
-    text-align: center;
     z-index: 2;
-    pointer-events: none; /* Lets user interact with anything underneath if needed */
-    padding-top: 5vw; /* Adjust if you want more spacing from the top */
+    text-align: center;
+    padding-top: 18vh; /* Adjust this value as needed for "down from top" */
 }
 
 .big-title {
