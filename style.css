@@ -30,7 +30,7 @@ body {
     color: #fff;
     z-index: 2;
     text-align: center;
-    padding-top: 30vh; /* Adjust this value as needed for "down from top" */
+    padding-top: 50vh; /* Adjust this value as needed for "down from top" */
 }
 
 .big-title {
