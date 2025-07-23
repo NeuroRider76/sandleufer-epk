@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;    /* header sticks to top */
-    padding-top: 30vw;               /* adjust this value for spacing from top */
+    padding-top: 20vw;               /* adjust this value for spacing from top */
     background: rgba(0,0,0,0.35);   /* overlay for readability */
     color: #fff;
     z-index: 2;
