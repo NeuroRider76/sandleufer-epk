@@ -8,21 +8,15 @@ body {
 .hero {
     position: relative;
     width: 100vw;
-    height: 100vh;
-    min-height: 600px; /* fallback for small screens */
+    /* No height or min-height here! */
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .hero-img {
-    position: absolute;
-    top: 0; left: 0;
+    display: block;
     width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    z-index: 1;
+    height: auto;         /* let the image set the height */
+    object-fit: contain;  /* ensures full image is always visible */
 }
 
 .overlay {
