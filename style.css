@@ -24,15 +24,21 @@ body {
 
 /* Overlay for floating content inside hero, always positioned inside */
 .overlay {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; /* or use flex-start/flex-end + padding for placement */
-  pointer-events: none; /* overlay doesn't block clicks, optional */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;    /* header sticks to top */
+    padding-top: 30vw;               /* adjust this value for spacing from top */
+    background: rgba(0,0,0,0.35);   /* overlay for readability */
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    pointer-events: none;
 }
 
 .big-title {
