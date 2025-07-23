@@ -64,30 +64,19 @@ body {
 }
 .bio-box {
   position: absolute;
-  top: 50%;         /* Adjust as needed */
+  top: 50%;
   left: 5%;
   width: 410px;
   height: 340px;
-  background: rgba(0,0,0,0.1);  /* Nearly transparent, slight shade */
+  background: rgba(0,0,0,0.1);
   border-radius: 18px;
   box-shadow:
-    0 0 24px 4px rgba(255, 0, 180, 0.35),   /* Soft pink glow (adjust for more/less) */
-    0 8px 32px rgba(0,0,0,0.32);            /* Subtle black shadow for depth */
-  /*overflow: hidden;*/
+    0 0 24px 4px rgba(255, 0, 180, 0.35),
+    0 8px 32px rgba(0,0,0,0.32);
   z-index: 4;
   display: flex;
   flex-direction: column;
-  backdrop-filter: blur(2.5px);             /* Optional: subtle glass effect */
-}
-
-.bio-scroll {
-  overflow-y: auto;
-  padding: 24px 26px 22px 26px;
-  font-size: 1.07rem;
-  color: #fff;
-  max-height: 100%;      /* makes sure it doesn't spill outside */
-  scrollbar-width: thin; /* for Firefox */
-  flex: 1 1 auto;    /* NEW: allows the scroll box to fill the available height */
+  backdrop-filter: blur(2.5px);
 }
 
 .bio-title {
@@ -98,6 +87,19 @@ body {
   color: #fff;
   text-shadow: 0 2px 12px #b20088;
   letter-spacing: 0.03em;
+  /* NEW: Prevent shrinking, always fits header size */
+  flex-shrink: 0;
+}
+
+.bio-scroll {
+  overflow-y: auto;
+  padding: 0 26px 22px 26px;
+  font-size: 1.07rem;
+  color: #fff;
+  /* NEW: Fill available space in .bio-box */
+  flex: 1 1 0%;
+  max-height: none; /* Let flexbox manage it */
+  scrollbar-width: thin;
 }
 .carousel-container {
     display: flex;
