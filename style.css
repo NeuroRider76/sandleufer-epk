@@ -50,6 +50,7 @@ body {
 }
 .carousel-container {
     display: flex;
+    flex-direction: row-reverse;  /* This makes the gigs appear right-to-left */
     justify-content: center;
     gap: 1.5rem;
     margin-top: 2rem;
