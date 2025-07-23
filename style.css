@@ -8,29 +8,27 @@ body {
 .hero {
   position: relative;
   width: 100vw;
+  min-height: 100vh;
   overflow: hidden;
 }
-
 .hero-img {
   display: block;
   width: 100vw;
-  height: auto;
   min-height: 100vh;
-  object-fit: contain;
+  height: auto;
+  object-fit: cover;
 }
-
 .overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  /* This centers vertically */
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.35); /* Optional for text readability */
+  justify-content: center;
+  background: rgba(0,0,0,0.35); /* Optional: for readability */
   color: #fff;
   z-index: 2;
+  text-align: center;
 }
 
 .big-title {
