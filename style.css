@@ -64,18 +64,20 @@ body {
 }
 .bio-box {
   position: absolute;
-  top: 55%;   /* play with this value: lower % = higher up, e.g., 45% */
+  top: 60%;         /* Adjust as needed */
   left: 5%;
   width: 410px;
   height: 340px;
-  background: rgba(0,0,0,0.65);
+  background: rgba(0,0,0,0.18);  /* Nearly transparent, slight shade */
   border-radius: 18px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+  box-shadow:
+    0 0 24px 4px rgba(255, 0, 180, 0.35),   /* Soft pink glow (adjust for more/less) */
+    0 8px 32px rgba(0,0,0,0.32);            /* Subtle black shadow for depth */
   overflow: hidden;
   z-index: 4;
   display: flex;
   flex-direction: column;
-  /* Remove margin, not needed for abs. position */
+  backdrop-filter: blur(2.5px);             /* Optional: subtle glass effect */
 }
 
 .bio-scroll {
